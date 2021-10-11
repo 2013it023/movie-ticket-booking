@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 import com.superops.ai.movieticketbooking.constant.MovieTicketBookingConstant;
 import com.superops.ai.movieticketbooking.core.exception.MovieTicketBookingException;
 import com.superops.ai.movieticketbooking.core.pojo.TokenDto;
-import com.superops.ai.movieticketbooking.dto.BlockedTicketByUserRepository;
+import com.superops.ai.movieticketbooking.dto.BlockSeatsRepository;
 import com.superops.ai.movieticketbooking.entity.BlockSeatsEntity;
 import com.superops.ai.movieticketbooking.pojo.BookTicketRequest;
 
@@ -18,7 +18,7 @@ import com.superops.ai.movieticketbooking.pojo.BookTicketRequest;
 public class MovieTicketBookingValidation {
 
 	@Autowired
-	private BlockedTicketByUserRepository repository;
+	private BlockSeatsRepository repository;
 
 	public void isValidTransaction(List<BlockSeatsEntity> seatsStatusList, BookTicketRequest bookTicketRequest,
 			TokenDto tokenDto) {
