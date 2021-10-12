@@ -18,6 +18,10 @@ public class MovieTicketBookingConstant {
 	public final static String SEAT_STATE_BLOCKED = "blocked";
 	public static final String SEAT_STATE_BOOKED = "booked";
 	public final static String PRIMARY_KEY_JOINER = "#";
+	
+	//AuthenticationInformation
+	public final static String JWT_TOKEN_COOKIE_NAME = "SSO_JWT";
+	
 
 	// Error Code
 	public final static String INVALID_DATA_CODE = "1001";
