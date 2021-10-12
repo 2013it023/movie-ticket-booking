@@ -7,6 +7,13 @@ import com.superops.ai.movieticketbooking.pojo.BookTicketRequest;
 import com.superops.ai.movieticketbooking.pojo.BookTicketResponse;
 import com.superops.ai.movieticketbooking.pojo.UserSelectSeatResponse;
 
+/**
+ * 
+ * Interface for Movie Ticket Booking
+ * 
+ * @author Saravanan Perumal
+ *
+ */
 public interface MovieTicketBookingService {
 
 	ServiceResponse<UserSelectSeatResponse> blockUserSelectedSeats(TokenDto tokenDto,

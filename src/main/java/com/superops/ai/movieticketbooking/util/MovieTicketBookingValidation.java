@@ -14,6 +14,13 @@ import com.superops.ai.movieticketbooking.dto.BlockSeatsRepository;
 import com.superops.ai.movieticketbooking.entity.BlockSeatsEntity;
 import com.superops.ai.movieticketbooking.pojo.BookTicketRequest;
 
+/**
+ * MovieTicketBookingValidation contains methods to perform validation and
+ * restriction.
+ * 
+ * @author Saravanan Perumal
+ *
+ */
 @Component
 public class MovieTicketBookingValidation {
 

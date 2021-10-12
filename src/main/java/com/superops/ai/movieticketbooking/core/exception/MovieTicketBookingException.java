@@ -2,6 +2,13 @@ package com.superops.ai.movieticketbooking.core.exception;
 
 import lombok.Getter;
 
+/**
+ * 
+ * MovieTicketBookingException - Common exception class for entire module.
+ * 
+ * @author Saravanan Perumal
+ *
+ */
 @Getter
 public class MovieTicketBookingException extends RuntimeException {
 	/**

@@ -14,6 +14,13 @@ import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.GenericFilterBean;
 
+/**
+ * 
+ * MovieTicketBookingFilter - Security Filter to secure the endpoints.
+ * 
+ * @author Saravanan Perumal
+ *
+ */
 @Component
 public class MovieTicketBookingFilter extends GenericFilterBean {
 

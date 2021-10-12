@@ -20,6 +20,14 @@ import com.superops.ai.movieticketbooking.pojo.BookTicketRequest;
 import com.superops.ai.movieticketbooking.pojo.PaymentRequest;
 import com.superops.ai.movieticketbooking.pojo.PaymentResponse;
 
+/**
+ * 
+ * ThirdPartyPaymentHandler provides an methods to make the payments with 3rd
+ * Party Service Provider..
+ * 
+ * @author Saravanan Perumal
+ *
+ */
 @Component
 public class ThirdPartyPaymentHandler {
 

@@ -16,12 +16,28 @@ import com.superops.ai.movieticketbooking.core.pojo.TicketBookingResponse;
 
 import lombok.extern.slf4j.Slf4j;
 
+/**
+ * ExceptionHandlers class handles the exception caught under com.superops.ai
+ * packages.
+ * 
+ * @author Saravanan Perumal
+ *
+ */
 @RestControllerAdvice(basePackages = "com.superops.ai")
 @Slf4j
 public class ExceptionHandlers extends ResponseEntityExceptionHandler {
 
 	DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy hh:mm:ss");
 
+	/**
+	 * handleServiceException will be executed when
+	 * MovieTicketBookingException.class throw at service level
+	 * 
+	 * @param servletRequest
+	 * @param exception
+	 * @param webRequest
+	 * @return error response
+	 */
 	@ExceptionHandler(MovieTicketBookingException.class)
 	public TicketBookingResponse<Object> handleServiceException(HttpServletRequest servletRequest,
 			MovieTicketBookingException exception, WebRequest webRequest) {
