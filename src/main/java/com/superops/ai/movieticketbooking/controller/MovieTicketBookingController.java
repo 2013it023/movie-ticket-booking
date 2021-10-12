@@ -25,12 +25,26 @@ public class MovieTicketBookingController extends IRestController {
 	@Autowired
 	private MovieTicketBookingService ticketBookingService;
 
+	/**
+	 * block_seats api provides an ability to block the seats for 2 minutes.
+	 * 
+	 * @param servletRequest
+	 * @param request
+	 * @return userSelectSeatResponse
+	 */
 	@RequestMapping(path = "/block_seats", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<TicketBookingResponse<UserSelectSeatResponse>> blockUserSelectedSeats(
 			HttpServletRequest servletRequest, @RequestBody(required = true) @Valid UserSelectedSeatRequest request) {
 		return invokeServiceMethod(servletRequest, request, ticketBookingService::blockUserSelectedSeats);
 	}
 
+	/**
+	 * payment api allows to make a payment for selected seats.
+	 * 
+	 * @param servletRequest
+	 * @param request
+	 * @return BookTicketResponse
+	 */
 	@RequestMapping(path = "/payment", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<TicketBookingResponse<BookTicketResponse>> bookUserSelectedSeat(
 			HttpServletRequest servletRequest, @RequestBody(required = true) @Valid BookTicketRequest request) {

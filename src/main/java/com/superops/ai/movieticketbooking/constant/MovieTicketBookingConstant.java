@@ -1,5 +1,12 @@
 package com.superops.ai.movieticketbooking.constant;
 
+/**
+ * 
+ * MovieTicketBookingConstant - constant class for entire module
+ * 
+ * @author Saravanan Perumal
+ *
+ */
 public class MovieTicketBookingConstant {
 
 	public final static String INDIAN_CURRENCY_CODE = "INR";

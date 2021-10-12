@@ -22,6 +22,12 @@ import com.superops.ai.movieticketbooking.service.MovieTicketBookingService;
 import com.superops.ai.movieticketbooking.util.MovieTicketBookingUtil;
 import com.superops.ai.movieticketbooking.util.MovieTicketBookingValidation;
 
+/**
+ * Implementation for movie ticket booking service
+ * 
+ * @author Saravanan Perumal
+ *
+ */
 @Service
 public class MovieTicketBookingServiceImpl implements MovieTicketBookingService {
 

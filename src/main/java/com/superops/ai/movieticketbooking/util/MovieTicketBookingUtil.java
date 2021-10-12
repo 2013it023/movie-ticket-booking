@@ -8,6 +8,13 @@ import com.superops.ai.movieticketbooking.core.pojo.TokenDto;
 import com.superops.ai.movieticketbooking.entity.BlockSeatsEntity;
 import com.superops.ai.movieticketbooking.pojo.UserSelectedSeatRequest;
 
+/**
+ * 
+ * Provides some constant methods for Movie ticket booking
+ * 
+ * @author Saravanan Perumal
+ *
+ */
 public class MovieTicketBookingUtil {
 
 	public static List<BlockSeatsEntity> createBlockSeatsEntityRequest(UserSelectedSeatRequest blockSeats,
